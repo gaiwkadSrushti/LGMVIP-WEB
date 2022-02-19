@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Student Enrollment Form</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="topnav">
+            <h3>Student Enrollment Form</h3>
+        </div>
+
+    </header>
+
+    <div class="split left">
+        <div class="centered">
+            <form class="form">
+                <fieldset>
+                    <div>
+                        <label>Name:</label>
+                        <input class="lab" type="text" name="name" id="name" required>
+                    </div>
+                    <div>
+                        <label>Email:</label>
+                        <input class="lab" type="email" name="email" id="email" required>
+                    </div>
+                    <div>
+                        <label>Education:</label>
+                        <input class="lab" type="text" name="education" id="education" required>
+                    </div>
+                    <div>
+                        <label>Age:</label>
+                        <input class="lab" type="text" name="age" id="age" required>
+                    </div>
+                    <div class="checks">
+                        <label>Gender:</label>
+                        <input type="radio" id="gender1" value="Female"><label>Female</label>
+                        <input type="radio" id="gender2" value="Male"><label>Male</label>
+                    </div>
+                    <div>
+
+                        <input type="button" name="button" id="btn" value="Add" onclick="AddRow()">
+                        <input type="button" name="button" value="remove" onclick="RemoveSelectedRow()">
+                    </div>
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+
+    <div class="split right">
+        <div class="centered">
+            <table border="4" id="show">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Education</th>
+                        <th>Age</th>
+                        <th>Gender</th>
+                        
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+
+
+
+
+
+        <script src="javascript.js"></script>
+
+</body>
+
+</html>
